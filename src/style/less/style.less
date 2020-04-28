@@ -45,8 +45,6 @@
     width: 90%;
     margin: 12px auto 10px 2%;
     &--box {
-      width: 22%;
-      justify-content: space-between;
       align-items: center;
     }
   }
@@ -62,6 +60,10 @@
     &--icon {
       margin-right: 16px;
     }
+    &--inner{
+      margin-right: 56px;
+    }
+
   }
   &__banner {
     position: relative;
@@ -114,12 +116,13 @@
     width: 100%;
     box-sizing: border-box;
     &--list {
-      width: 51%;
+      width: 90%;
       margin: 0 auto;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
     }
     &--item {
+        margin-right: 28px;
       & a {
         font-family: "SF UI Display Regular",sans-serif;
         font-style: normal;
@@ -204,9 +207,9 @@
   }
   &__pagination {
     &--list {
-      width: 19%;
+      width: 35%;
       margin: 0 auto;
-      justify-content: space-around;
+      justify-content: center;
       & li a {
         background: #F2F3F7;
         display: flex;
@@ -223,6 +226,7 @@
         line-height: 22px;
         text-decoration: none;
         color: #456078;
+        margin: 0 8px;
         &.current {
           color: #4070F4;
           background: #F2F3F7;
@@ -321,5 +325,10 @@
     width: 9%;
     padding: 0 1%;
     justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1400px){
+  .header__banner--block {
+    width: 70%;
   }
 }
