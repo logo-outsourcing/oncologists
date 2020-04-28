@@ -1,0 +1,325 @@
+@font-face {
+  font-family: 'SF UI Display Bold';
+  src: url('../../fonts/SF-UI-Display-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Display Regular';
+  src: url('../../fonts/SF-UI-Display-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-button {
+  background: #1B1947;
+  border: none;
+  box-shadow: -6px -6px 16px #FFFFFF, 6px 6px 16px #BECDE2;
+  border-radius: 10px;
+  font-family: "SF UI Display Bold",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #EDF0F4;
+  padding: 8px;
+}
+
+.content-image {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 66px;
+  &__heading {
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 12px auto 10px 2%;
+    &--box {
+      width: 22%;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__cabinet {
+    font-family: "SF UI Display Regular",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1B1947;
+    text-decoration: none;
+    align-items: center;
+    &--icon {
+      margin-right: 16px;
+    }
+  }
+  &__banner {
+    position: relative;
+    width: 100%;
+    &--info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &--image {
+      margin-bottom: 10%;
+      display: block;
+    }
+    &--block {
+      padding: 28px;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      background: #FFFFFF;
+      border-radius: 10px;
+      width: 60%;
+      margin-bottom: 2%;
+    }
+    &--text {
+      font-family: "SF UI Display Bold",sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 36px;
+      color: #1B1947;
+      margin-right: 6%;
+    }
+    &--button {
+      font-weight: bold;
+      font-size: 20px;
+      color: #FFFFFF;
+      padding: 12px;
+      box-sizing: border-box;
+      width: 22%;
+    }
+  }
+  &__menu {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    &--list {
+      width: 51%;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &--item {
+      & a {
+        font-family: "SF UI Display Regular",sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #1B1947;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.conference {
+  margin-bottom: 72px;
+  &__container {
+    width: 94%;
+    margin: 0 auto;
+  }
+  &__content {
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__image {
+    width: 50%;
+    margin-right: 2%;
+  }
+  &__text {
+    width: 47%;
+  }
+  &__title {
+    font-family: "SF UI Display Regular",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 72px;
+    color: #1B1947;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    font-family: "SF UI Display Regular",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1B1947;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 17px;
+    &--green {
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        right: 0;
+        background: #8DC63F;
+        height: 5px;
+        width: calc(100% + 155px);
+      }
+    }
+  }
+  &__link {
+    font-family: "SF UI Display Regular",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1B1947;
+    text-decoration: none;
+  }
+  &__button {
+    padding: 12px;
+    box-sizing: border-box;
+    width: 28%;
+    margin-right: 22px;
+    font-size: 20px;
+  }
+  &__toggle {
+    align-items: center;
+    width: 91%;
+    margin: 0 auto 12%;
+  }
+  &__pagination {
+    &--list {
+      width: 19%;
+      margin: 0 auto;
+      justify-content: space-around;
+      & li a {
+        background: #F2F3F7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        box-shadow: -6px -6px 16px #FFFFFF, 6px 6px 16px #BECDE2;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        text-decoration: none;
+        color: #456078;
+        &.current {
+          color: #4070F4;
+          background: #F2F3F7;
+          box-shadow: inset -5px -5px 30px #FFFFFF, inset 4px 4px 8px rgba(190, 205, 226, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.tidings {
+  text-align: right;
+  margin-bottom: 125px;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 768px;
+    left: 0;
+    top: -33%;
+    z-index: -1;
+    background: #F5F5F5;
+  }
+  &__container {
+    width: 94%;
+    margin: 0 auto;
+  }
+  &__content {
+    align-items: flex-end;
+    margin-bottom: 52px;
+  }
+  &__image {
+    width: 51%;
+
+  }
+  &__text {
+    width: 47%;
+    margin-right: 2%;
+  }
+  &__subtitle {
+    margin-bottom: 50px;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      background: #DE5067;
+      height: 5px;
+      width: calc(100% + 155px);
+    }
+  }
+  &__title{
+    font-size: 50px;
+    margin-bottom: 13px;
+    line-height: 60px;
+  }
+  &__data {
+    font-family: "SF UI Display Regular",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1B1947;
+    margin-bottom: 65px;
+  }
+  &__toggle {
+    margin-bottom: 13%;
+    justify-content: flex-end;
+  }
+  &__button {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+
+.footer{
+  background: #FAFAFA;
+  padding: 30px 0;
+  &__content{
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    margin: 0 auto;
+  }
+  &__text{
+    font-family: "SF UI Display Regular",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+  }
+  &__social{
+    width: 9%;
+    padding: 0 1%;
+    justify-content: space-around;
+  }
+}
