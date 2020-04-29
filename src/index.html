@@ -4,13 +4,130 @@
     <meta charset="UTF-8">
     <title>AOP - Главная</title>
     <link rel="stylesheet" href="style/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/css/swiper.min.css">
     <link rel="stylesheet" href="style/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="header">
     <div class="content-row header__heading">
-        <a href="#"><img src="img/home/logo.svg" alt="logo"></a>
+        <a href="#" class="header__logo"><img src="img/home/logo.svg" alt="logo" class="content-image"></a>
+        <div class="header__mobile">
+            <a href="#" class="header__mobile--button"><span></span></a>
+            <div class="header__mobile--wrap">
+                <ul class="header__mobile--menu">
+                    <li>
+                        <a href="#">Личный кабинет</a>
+                    </li>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#" id="menu-association">Об Ассоциации</a>
+                    </li>
+                    <li>
+                        <a href="#" id="menu-activity">Мероприятия</a>
+                    </li>
+                    <li>
+                        <a href="#" id="menu-specialists">Специалистам</a>
+                    </li>
+                    <li>
+                        <a href="#">Партнёры </a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#" id="menu-help">Помощь специалистам</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="header__association">
+                    <li>
+                        <a href="#" id="menu-association-close" class="header__mobile--active"><img
+                                src="img/home/arrow.svg" alt="arrow" class="header__mobile--image">Об Ассоциации</a>
+                    </li>
+                    <li>
+                        <a href="#">Цели Ассоциации</a>
+                    </li>
+                    <li>
+                        <a href="#">Члены Ассоциации</a>
+                    </li>
+                    <li>
+                        <a href="#">Вступление в Ассоциацию</a>
+                    </li>
+                    <li>
+                        <a href="#">Руководство Ассоциации</a>
+                    </li>
+                </ul>
+                <ul class="header__activity">
+                    <li>
+                        <a href="#" id="menu-activity-close" class="header__mobile--active"><img
+                                src="img/home/arrow.svg" alt="arrow" class="header__mobile--image">Об Ассоциации</a>
+                    </li>
+                    <li>
+                        <a href="#">Календарь</a>
+                    </li>
+                    <li>
+                        <a href="#">Видео с мероприятий</a>
+                    </li>
+                    <li>
+                        <a href="#">Фотогалерея</a>
+                    </li>
+                    <li>
+                        <a href="#">Участникам</a>
+                    </li>
+                    <li>
+                        <a href="#">Регистрация</a>
+                    </li>
+                </ul>
+                <ul class="header__specialists">
+                    <li>
+                        <a href="#" id="menu-specialists-close" class="header__mobile--active"><img
+                                src="img/home/arrow.svg" alt="arrow" class="header__mobile--image">Специалистам</a>
+                    </li>
+                    <li>
+                        <a href="#">Стандарты лечения</a>
+                    </li>
+                    <li>
+                        <a href="#">Обучение</a>
+                    </li>
+                    <li>
+                        <a href="#">Клинические рекомендации</a>
+                    </li>
+                    <li>
+                        <a href="#">Реабилитация</a>
+                    </li>
+                    <li>
+                        <a href="#">Профилактика</a>
+                    </li>
+                </ul>
+                <ul class="header__help">
+                    <li>
+                        <a href="#" id="menu-help-close" class="header__mobile--active">
+                            <img src="img/home/arrow.svg" alt="arrow" class="header__mobile--image">Помощь специалистам</a>
+                    </li>
+                    <li>
+                        <a href="#">Онлайн консультация</a>
+                    </li>
+                    <li>
+                        <a href="#">Цели Ассоциации</a>
+                    </li>
+                    <li>
+                        <a href="#">F. A. Q.</a>
+                    </li>
+                    <li>
+                        <a href="#">Документы и формы</a>
+                    </li>
+                    <li>
+                        <a href="#">Онлайн консультация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div class="content-row header__heading--box">
             <a href="#" class="header__cabinet header__cabinet--inner content-row">
                 <img src="img/home/cabinet.svg" alt="cabinet" class="header__cabinet--icon">
@@ -22,6 +139,7 @@
             </a>
         </div>
     </div>
+    <a href="#" class="header__banner--text header__banner--link"> Try our new program with a special offer</a>
     <div class="header__banner">
         <img src="img/home/banner.png" alt="banner" class="content-image">
         <div class="header__banner--info">
@@ -30,6 +148,7 @@
                 <p class="header__banner--text">Try our new program with a special offer</p>
                 <button class="content-button header__banner--button">Try programm</button>
             </div>
+
         </div>
     </div>
     <div class="header__menu">
@@ -60,100 +179,256 @@
 </header>
 <section class="conference">
     <div class="conference__container">
-        <div class="content-row conference__content">
-            <div class="conference__image">
-                <img src="img/home/conference.png" alt="conference" class="content-image">
-            </div>
-            <div class="conference__text">
-                <h3 class="conference__subtitle conference__subtitle--green">Научно-практическая конференция</h3>
-                <h2 class="conference__title">«Актуальные вопросы онкологии: клинические<br>
-                    и организационные аспекты»</h2>
-                <div class="content-row conference__toggle">
-                    <button class="content-button conference__button">Подробнее</button>
-                    <a href="#" class="conference__link">Календарь мероприятий</a>
+        <div class="swiper-container conference__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="content-row conference__slide">
+                        <div class="conference__image">
+                            <img src="img/home/conference.png" alt="conference" class="content-image">
+                        </div>
+                        <div class="conference__text">
+                            <h3 class="conference__subtitle conference__subtitle--green">Научно-практическая
+                                конференция</h3>
+                            <h2 class="conference__title">«Актуальные вопросы онкологии: клинические<br>
+                                и организационные аспекты»</h2>
+                            <div class="conference__picture">
+                                <img src="img/home/conference.png" alt="conference" class="content-image">
+                            </div>
+                            <div class="content-row conference__toggle">
+                                <button class="content-button conference__button">Подробнее</button>
+                                <a href="#" class="conference__link">Календарь мероприятий</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content-row conference__slide">
+                        <div class="conference__image">
+                            <img src="img/home/conference.png" alt="conference" class="content-image">
+                        </div>
+                        <div class="conference__text">
+                            <h3 class="conference__subtitle conference__subtitle--green">Научно-практическая
+                                конференция</h3>
+                            <h2 class="conference__title">«Актуальные вопросы онкологии: клинические<br>
+                                и организационные аспекты»</h2>
+                            <div class="conference__picture">
+                                <img src="img/home/conference.png" alt="conference" class="content-image">
+                            </div>
+                            <div class="content-row conference__toggle">
+                                <button class="content-button conference__button">Подробнее</button>
+                                <a href="#" class="conference__link">Календарь мероприятий</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content-row conference__slide">
+                        <div class="conference__image">
+                            <img src="img/home/conference.png" alt="conference" class="content-image">
+                        </div>
+                        <div class="conference__text">
+                            <h3 class="conference__subtitle conference__subtitle--green">Научно-практическая
+                                конференция</h3>
+                            <h2 class="conference__title">«Актуальные вопросы онкологии: клинические<br>
+                                и организационные аспекты»</h2>
+                            <div class="conference__picture">
+                                <img src="img/home/conference.png" alt="conference" class="content-image">
+                            </div>
+                            <div class="content-row conference__toggle">
+                                <button class="content-button conference__button">Подробнее</button>
+                                <a href="#" class="conference__link">Календарь мероприятий</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content-row conference__slide">
+                        <div class="conference__image">
+                            <img src="img/home/conference.png" alt="conference" class="content-image">
+                        </div>
+                        <div class="conference__text">
+                            <h3 class="conference__subtitle conference__subtitle--green">Научно-практическая
+                                конференция</h3>
+                            <h2 class="conference__title">«Актуальные вопросы онкологии: клинические<br>
+                                и организационные аспекты»</h2>
+                            <div class="conference__picture">
+                                <img src="img/home/conference.png" alt="conference" class="content-image">
+                            </div>
+                            <div class="content-row conference__toggle">
+                                <button class="content-button conference__button">Подробнее</button>
+                                <a href="#" class="conference__link">Календарь мероприятий</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content-row conference__slide">
+                        <div class="conference__image">
+                            <img src="img/home/conference.png" alt="conference" class="content-image">
+                        </div>
+                        <div class="conference__text">
+                            <h3 class="conference__subtitle conference__subtitle--green">Научно-практическая
+                                конференция</h3>
+                            <h2 class="conference__title">«Актуальные вопросы онкологии: клинические<br>
+                                и организационные аспекты»</h2>
+                            <div class="conference__picture">
+                                <img src="img/home/conference.png" alt="conference" class="content-image">
+                            </div>
+                            <div class="content-row conference__toggle">
+                                <button class="content-button conference__button">Подробнее</button>
+                                <a href="#" class="conference__link">Календарь мероприятий</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination conference__pagination"></div>
+            <div class="conference__slider-prev slider-prev"><img src="img/home/arrow-right.svg" alt="arrow"></div>
+            <div class=" conference__slider-next slider-next"><img src="img/home/arrow-left.svg" alt="arrow"></div>
         </div>
-        <div class="conference__pagination">
-            <ul class="conference__pagination--list content-row">
-                <li>
-                    <a href="#"> &lt;</a>
-                </li>
-                <li>
-                    <a href="#" class="current">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">...</a>
-                </li>
-                <li>
-                    <a href="#">10</a>
-                </li>
-                <li>
-                    <a href="#">&#62;</a>
-                </li>
 
-            </ul>
-        </div>
     </div>
 </section>
 <section class="tidings">
     <div class="tidings__container">
-        <div class="content-row tidings__content">
-            <div class="tidings__text">
-                <h3 class="conference__subtitle tidings__subtitle">Последние новости</h3>
-                <h2 class="conference__title tidings__title">Состоялось заседание Правления «Ассоциации онкологов
-                    России»</h2>
-                <p class="tidings__data">1 февраля 2020 г.</p>
-                <div class="content-row conference__toggle tidings__toggle">
-                    <a href="#" class="conference__link">Перейти ко всем новостям</a>
-                    <button class="content-button conference__button tidings__button">Подробнее</button>
+        <div class="swiper-container tidings__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper ">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="content-row tidings__slide">
+                        <div class="tidings__text">
+                            <h3 class="conference__subtitle tidings__subtitle">Последние новости</h3>
+                            <div class="tidings__block">
+                                <h2 class="conference__title tidings__title">Состоялось заседание Правления «Ассоциации
+                                    онкологов
+                                    России»</h2>
+                                <p class="tidings__data">1 февраля 2020 г.</p>
+                            </div>
+                            <div class="tidings__picture">
+                                <img src="img/home/tidings.png" alt=" " class="content-image">
+                            </div>
+                            <div class="content-row conference__toggle tidings__toggle">
+                                <a href="#" class="conference__link">Перейти ко всем новостям</a>
+                                <button class="content-button conference__button tidings__button">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="tidings__image">
+                            <img src="img/home/tidings.png" alt=" " class="content-image">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="tidings__image">
-                <img src="img/home/tidings.png" alt=" " class="content-image">
-            </div>
-        </div>
 
-        <div class="conference__pagination">
-            <ul class="conference__pagination--list content-row">
-                <li>
-                    <a href="#"> &lt;</a>
-                </li>
-                <li>
-                    <a href="#" class="current">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">...</a>
-                </li>
-                <li>
-                    <a href="#">10</a>
-                </li>
-                <li>
-                    <a href="#">&#62;</a>
-                </li>
+                <div class="swiper-slide">
+                    <div class="content-row tidings__slide">
+                        <div class="tidings__text">
+                            <h3 class="conference__subtitle tidings__subtitle">Последние новости</h3>
+                            <div class="tidings__block">
+                                <h2 class="conference__title tidings__title">Состоялось заседание Правления «Ассоциации
+                                    онкологов
+                                    России»</h2>
+                                <p class="tidings__data">1 февраля 2020 г.</p>
+                            </div>
+                            <div class="tidings__picture">
+                                <img src="img/home/tidings.png" alt=" " class="content-image">
+                            </div>
+                            <div class="content-row conference__toggle tidings__toggle">
+                                <a href="#" class="conference__link">Перейти ко всем новостям</a>
+                                <button class="content-button conference__button tidings__button">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="tidings__image">
+                            <img src="img/home/tidings.png" alt=" " class="content-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content-row tidings__slide">
+                        <div class="tidings__text">
+                            <h3 class="conference__subtitle tidings__subtitle">Последние новости</h3>
+                            <div class="tidings__block">
+                                <h2 class="conference__title tidings__title">Состоялось заседание Правления «Ассоциации
+                                    онкологов
+                                    России»</h2>
+                                <p class="tidings__data">1 февраля 2020 г.</p>
+                            </div>
+                            <div class="tidings__picture">
+                                <img src="img/home/tidings.png" alt=" " class="content-image">
+                            </div>
+                            <div class="content-row conference__toggle tidings__toggle">
+                                <a href="#" class="conference__link">Перейти ко всем новостям</a>
+                                <button class="content-button conference__button tidings__button">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="tidings__image">
+                            <img src="img/home/tidings.png" alt=" " class="content-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content-row tidings__slide">
+                        <div class="tidings__text">
+                            <h3 class="conference__subtitle tidings__subtitle">Последние новости</h3>
+                            <div class="tidings__block">
+                                <h2 class="conference__title tidings__title">Состоялось заседание Правления «Ассоциации
+                                    онкологов
+                                    России»</h2>
+                                <p class="tidings__data">1 февраля 2020 г.</p>
+                            </div>
+                            <div class="tidings__picture">
+                                <img src="img/home/tidings.png" alt=" " class="content-image">
+                            </div>
+                            <div class="content-row conference__toggle tidings__toggle">
+                                <a href="#" class="conference__link">Перейти ко всем новостям</a>
+                                <button class="content-button conference__button tidings__button">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="tidings__image">
+                            <img src="img/home/tidings.png" alt=" " class="content-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content-row tidings__slide">
+                        <div class="tidings__text">
+                            <h3 class="conference__subtitle tidings__subtitle">Последние новости</h3>
+                            <div class="tidings__block">
+                                <h2 class="conference__title tidings__title">Состоялось заседание Правления «Ассоциации
+                                    онкологов
+                                    России»</h2>
+                                <p class="tidings__data">1 февраля 2020 г.</p>
+                            </div>
+                            <div class="tidings__picture">
+                                <img src="img/home/tidings.png" alt=" " class="content-image">
+                            </div>
+                            <div class="content-row conference__toggle tidings__toggle">
+                                <a href="#" class="conference__link">Перейти ко всем новостям</a>
+                                <button class="content-button conference__button tidings__button">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="tidings__image">
+                            <img src="img/home/tidings.png" alt=" " class="content-image">
+                        </div>
+                    </div>
+                </div>
 
-            </ul>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination tidings__pagination"></div>
+            <div class="tidings__slider-prev slider-prev"><img src="img/home/arrow-right.svg" alt="arrow"></div>
+            <div class="tidings__slider-next slider-next"><img src="img/home/arrow-left.svg" alt="arrow"></div>
         </div>
     </div>
 </section>
 <footer class="footer">
     <div class="content-row footer__content">
-        <a href="#">
-            <img src="img/home/logo.svg" alt="logo">
+        <a href="#" class="footer__logo">
+            <img src="img/home/logo.svg" alt="logo" class="content-image">
         </a>
-        <p class="footer__text">© Ассоциация онкологов России. Все права защищены.</p>
+        <p class="footer__text">©<span class="footer__text--mobile">AOP</span><span class="footer__text--hidden"> Ассоциация онкологов России.</span> Все права защищены.</p>
         <div class="footer__social content-row">
             <a href="#"><img src="img/home/twitter.svg" alt="twitter"></a>
             <a href="#"><img src="img/home/vkontakte.svg" alt="vkontakte"></a>
@@ -161,5 +436,11 @@
         </div>
     </div>
 </footer>
+<script
+        src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/js/swiper.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
