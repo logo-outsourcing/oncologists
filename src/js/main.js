@@ -5,6 +5,7 @@ $('.header__mobile--button').click(function (e) {
     e.preventDefault();
     $('.header__mobile--button').toggleClass('is-active');
     $('.header__mobile--wrap').toggleClass('header__mobile--open');
+    $('body').toggleClass('overflow');
 });
 $('#menu-association').click(function (e) {
     e.preventDefault();

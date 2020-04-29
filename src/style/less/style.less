@@ -12,6 +12,9 @@
   font-style: normal;
 }
 
+.overflow{
+  overflow: hidden;
+}
 .content-row {
   display: flex;
   flex-direction: row;
@@ -117,9 +120,11 @@
       }
     }
     &--wrap {
+      position: fixed;
+      top: 35px;
+      overflow-y: auto;
+      height: calc(100vh - 35px);
       display: none;
-      position: absolute;
-      top: 83%;
       left: 0;
       width: 100%;
       background: white;
@@ -255,7 +260,6 @@
   }
 
 }
-
 .conference {
   margin-bottom: 65px;
   &__container {
