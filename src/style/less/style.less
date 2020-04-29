@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'SF UI Display Bold';
-  src: url('../../fonts/SF-UI-Display-Bold.ttf') format('truetype');
+  src: url('../../fonts/SFUIDisplay-Bold.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF UI Display Regular';
-  src: url('../../fonts/SF-UI-Display-Regular.ttf') format('truetype');
+  src: url('../../fonts/SFUIDisplay-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -29,6 +29,7 @@
   line-height: 24px;
   color: #EDF0F4;
   padding: 8px;
+  cursor: pointer;
 }
 
 .content-image {
@@ -527,21 +528,34 @@
   }
 }
 
-@media screen and (max-width: 1700px){
+@media screen and (max-width: 1700px) {
   .slider-next {
     right: 39.5%;
   }
-  .slider-prev{
+
+  .slider-prev {
     left: 39.5%;
   }
+
+  .conference__subtitle {
+    font-size: 38px;
+  }
+
+  .conference__title {
+
+    font-size: 56px;
+  }
 }
+
 @media screen and (max-width: 1400px) {
   .header__banner--block {
     width: 70%;
   }
+
   .slider-next {
     right: 38%;
   }
+
   .slider-prev {
     left: 38%;
   }
@@ -563,9 +577,11 @@
   .slider-next {
     right: 36%;
   }
+
   .slider-prev {
     left: 36%;
   }
+
   .conference__image {
     width: 40%;
   }
@@ -843,7 +859,7 @@
   .header {
     padding-bottom: 31px;
     margin-bottom: 46px;
-    background: url("../../img/home/banner-mobile.png") no-repeat;
+    background: url("../../img/home/banner.png") no-repeat;
     background-size: cover;
   }
 
@@ -869,6 +885,7 @@
   }
 
   .header__banner--text {
+    font-family: "SF UI Display Regular", sans-serif;
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
@@ -895,20 +912,62 @@
     display: none;
   }
 
+  .tidings__text {
+    width: 100%;
+  }
+
+  .conference__text {
+    width: 100%;
+  }
+
+  .conference__container {
+    width: 100%;
+  }
+
+  .tidings__container {
+    width: 100%;
+  }
+
+  .tidings__data {
+    margin-left: 30px;
+  }
+
+  .conference__slide {
+    margin-bottom: 25px;
+  }
+
+  .tidings__subtitle:before {
+    right: -13px;
+    width: calc(100% + 43px);
+    bottom: -12px;
+  }
+
+  .conference {
+    margin-bottom: 40px;
+  }
+
+  .tidings__slide {
+    margin-bottom: 25px;
+  }
+
   .conference__subtitle {
     font-size: 19px;
     line-height: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
 
   .conference__title {
+    font-family: "SF UI Display Bold", sans-serif;
     font-size: 25px;
     line-height: 39px;
     font-weight: bold;
     margin-bottom: 24px;
+    margin-left: 30px;
   }
 
   .conference__subtitle--green:before {
-    bottom: -9px;
+    bottom: -13px;
     right: 40%;
     width: 70%;
   }
@@ -929,12 +988,29 @@
     margin-left: 0;
   }
 
+  .tidings__data {
+    margin-bottom: 7px;
+  }
+
   .conference__toggle {
     justify-content: space-between;
   }
 
   .footer__social a {
     margin-right: 11px;
+  }
+
+  .footer__social--twitter {
+    width: 14px;
+    height: 11px;
+  }
+  .footer__social--vkontakte {
+    width: 18px;
+    height: 11px;
+  }
+  .footer__social--facebook {
+    width: 6px;
+    height: 11px;
   }
 
   .footer__text--hidden {
@@ -944,9 +1020,38 @@
   .footer__text--mobile {
     display: inline-block;
   }
+
+  .tidings {
+    margin-bottom: 100px;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .header__heading {
+    margin: 0 0 290px;
+  }
+
+  .header__banner--link {
+    width: 85%;
+  }
+
+  .header__mobile--button {
+    margin-right: 12px;
+  }
+
+  .header__mobile--button:after {
+    left: 5px;
+  }
+
+  .header__mobile--button:before {
+    right: 3px;
+  }
+  .footer {
+    padding: 7px 0;
+  }
+  .footer__logo {
+    margin-left: 20px;
+  }
   .footer__text {
     font-size: 9px;
     line-height: 16px;
@@ -957,7 +1062,7 @@
   }
 
   .conference__picture {
-    margin-bottom: 22px;
+    margin-bottom: 14px;
   }
 
   .conference__button {
@@ -973,18 +1078,21 @@
   }
 
   .tidings__subtitle {
-    margin-bottom: 15px;
+    margin-bottom: 23px;
   }
 
   .tidings__title {
-    margin-bottom: 5px;
+    margin-bottom: 11px;
   }
+
   .tidings__picture {
     margin-bottom: 12px;
   }
+
   .conference__toggle {
-    width: 100%;
+    width: 90%;
   }
+
   .content-button {
     font-family: "SF UI Display Regular", sans-serif;
 
