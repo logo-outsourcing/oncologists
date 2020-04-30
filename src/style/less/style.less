@@ -12,9 +12,10 @@
   font-style: normal;
 }
 
-.overflow{
+.overflow {
   overflow: hidden;
 }
+
 .content-row {
   display: flex;
   flex-direction: row;
@@ -134,7 +135,7 @@
       & li {
         padding: 24px 0;
         position: relative;
-        &:not(:last-child):after{
+        &:not(:last-child):after {
           content: "";
           position: absolute;
           bottom: 0;
@@ -260,6 +261,7 @@
   }
 
 }
+
 .conference {
   margin-bottom: 65px;
   &__container {
@@ -407,7 +409,7 @@
 
 .tidings {
   text-align: right;
-  margin-bottom: 106px;
+  margin-bottom: 200px;
   position: relative;
   &:before {
     content: "";
@@ -510,6 +512,53 @@
   color: #4070F4;
   background: #F2F3F7;
   box-shadow: inset -5px -5px 30px #FFFFFF, inset 4px 4px 8px rgba(190, 205, 226, 0.5);
+}
+
+.partners {
+  margin-bottom: 236px;
+  &__title{
+    font-family: "SF UI Display Regular",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #1B1947;
+    margin-bottom: 53px;
+  }
+  &__container {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+  }
+  &__slider{
+    width: 100%;
+  }
+  &__image{
+    max-width: 100%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  &__slide {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__prev{
+    position: absolute;
+    left: -43px;
+    bottom: 26%;
+
+  }
+  &__next{
+    position: absolute;
+    right: -43px;
+    bottom: 26%;
+
+  }
 }
 
 .footer {
@@ -1018,10 +1067,12 @@
     width: 14px;
     height: 11px;
   }
+
   .footer__social--vkontakte {
     width: 18px;
     height: 11px;
   }
+
   .footer__social--facebook {
     width: 6px;
     height: 11px;
@@ -1035,8 +1086,24 @@
     display: inline-block;
   }
 
-  .tidings {
-    margin-bottom: 100px;
+  .partners__container{
+    width: 100%;
+  }
+  .partners__prev {
+    display: none;
+  }
+  .partners__next{
+    display: none;
+  }
+  .partners {
+    margin-bottom: 72px;
+  }
+  .partners__title{
+    font-family: "SF UI Display Bold",sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 39px;
+margin-bottom: 35px;
   }
 }
 
@@ -1060,12 +1127,15 @@
   .header__mobile--button:before {
     right: 5px;
   }
+
   .footer {
     padding: 7px 0;
   }
+
   .footer__logo {
     margin-left: 20px;
   }
+
   .footer__text {
     font-size: 9px;
     line-height: 16px;
@@ -1090,6 +1160,7 @@
   .tidings__data {
     font-size: 12px;
   }
+
   .tidings__slider .tidings__pagination {
     bottom: 20%;
   }
@@ -1100,6 +1171,7 @@
     text-align: center;
     box-sizing: border-box;
   }
+
   .tidings__subtitle {
     margin-bottom: 23px;
   }
